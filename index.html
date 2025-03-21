@@ -10,21 +10,21 @@
 <body>
     <div class="container">
         <div class="search-box">
-            <input type="text" placeholder="Enter city name" class="search-input">
-            <button class="search-button">
+            <input type="text" placeholder="Enter city name" class="search-input" id="search-input">
+            <button id="search-button" class="search-button">
                 <i class="fas fa-search"></i>
             </button>
         </div>
 
         <div class="weather-info">
             <div class="location">
-                <h2 class="city">City Name</h2>
-                <p class="date">Monday, 1 January</p>
+                <h2 class="city" id="city">City Name</h2>
+                <p class="date" id="date">Monday, 1 January</p>
             </div>
 
             <div class="weather-data">
                 <div class="temperature">
-                    <h1 class="temp">0°C</h1>
+                    <h1 class="temp" id="temp">0°C</h1>
                     <div class="weather-icon">
                         <i class="fas fa-cloud"></i>
                     </div>
@@ -33,19 +33,21 @@
                 <div class="details">
                     <div class="detail-item">
                         <i class="fas fa-temperature-high"></i>
-                        <span>Feels like: <span class="feels-like">0°C</span></span>
+                        <span>Feels like: <span class="feels-like" id="feels-like">0°C</span></span>
                     </div>
                     <div class="detail-item">
                         <i class="fas fa-tint"></i>
-                        <span>Humidity: <span class="humidity">0%</span></span>
+                        <span>Humidity: <span class="humidity" id="humidity">0%</span></span>
                     </div>
                     <div class="detail-item">
                         <i class="fas fa-wind"></i>
-                        <span>Wind: <span class="wind-speed">0 km/h</span></span>
+                        <span>Wind: <span class="wind-speed" id="wind-speed">0 km/h</span></span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
